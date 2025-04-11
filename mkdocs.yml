@@ -1,0 +1,49 @@
+site_name: My Docs
+site_url: https://mydomain.org/mysite
+theme:
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: deep orange
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlitght
+    - search.share
+    - content.code.copy
+
+plugins:
+  - search
+  - tags:
+      tag_files: tags.md
+  - blog
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Code Docs: 
+    - Java: Coding/my-first-java-file.md
+  - About:
+    - About Me: About/about.md
+    - Piazza Garibaldi: About/childhood.md
+  - Tags: tags.md
+  - Blog:
+    - blog/index.md
