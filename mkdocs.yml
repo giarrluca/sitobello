@@ -24,8 +24,7 @@ theme:
 
 plugins:
   - search
-  - tags:
-      tag_files: tags.md
+  - tags
   - blog
   - mkdocs-video
 
