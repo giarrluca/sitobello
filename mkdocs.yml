@@ -27,8 +27,12 @@ plugins:
   - tags:
       tag_files: tags.md
   - blog
+  - mkdocs-video
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -36,6 +40,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
 
 nav:
   - Home: index.md
